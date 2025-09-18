@@ -1,0 +1,61 @@
+{
+  "name": "upthrust-workflow-automation",
+  "version": "2.0.0",
+  "description": "AI-driven workflow automation platform with intelligent caching and chained workflows",
+  "private": true,
+  "keywords": [
+    "workflow-automation",
+    "ai-integration",
+    "nodejs",
+    "react",
+    "postgresql",
+    "redis",
+    "caching",
+    "github-oauth"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/Upthrust_Assignment.git"
+  },
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm run install:server && npm run install:client",
+    "install:server": "cd server && npm install",
+    "install:client": "cd client && npm install",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm start",
+    "start": "cd server && npm start",
+    "start:client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
+    "test": "npm run test:server && npm run test:client",
+    "test:server": "cd server && npm test",
+    "test:client": "cd client && npm test",
+    "lint": "npm run lint:server && npm run lint:client",
+    "lint:server": "cd server && npm run lint",
+    "lint:client": "cd client && npm run lint",
+    "clean": "npm run clean:server && npm run clean:client",
+    "clean:server": "cd server && rm -rf node_modules dist",
+    "clean:client": "cd client && rm -rf node_modules build",
+    "cache:clear": "curl -X DELETE http://localhost:5000/api/cache/clear",
+    "cache:stats": "curl http://localhost:5000/api/cache/stats",
+    "health:check": "curl http://localhost:5000/api/ai/health"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "homepage": "https://github.com/yourusername/Upthrust_Assignment#readme",
+  "bugs": {
+    "url": "https://github.com/yourusername/Upthrust_Assignment/issues"
+  }
+}
