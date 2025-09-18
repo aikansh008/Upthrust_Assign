@@ -18,7 +18,7 @@ router.get('/github/callback',
     );
     
     // Redirect to frontend with token
-    const clientUrl = process.env.CLIENT_URL || 'https://upthrust-assign.onrender.com';
+    const clientUrl = process.env.CLIENT_URL ;
     res.redirect(`${clientUrl}/auth/callback?token=${token}`);
   }
 );

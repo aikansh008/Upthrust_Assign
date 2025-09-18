@@ -54,6 +54,7 @@ app.use(helmet());
 app.use(cors({
   origin: [
     'https://upthrust-assign.onrender.com',
+    'https://upthrust-assign-2.onrender.com',
     'http://localhost:3000',
     'http://localhost:3001',
     process.env.CLIENT_URL
