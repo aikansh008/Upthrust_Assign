@@ -6,7 +6,7 @@ const { User } = require('../models');
 passport.use(new GitHubStrategy({
   clientID: process.env.GITHUB_CLIENT_ID,
   clientSecret: process.env.GITHUB_CLIENT_SECRET,
-  callbackURL: "http://localhost:5000/auth/github/callback"
+  callbackURL: process.env.GITHUB_CALLBACK_URL || "https://upthrust-assign.onrender.com/auth/github/callback"
 },
 async (accessToken, refreshToken, profile, done) => {
   try {

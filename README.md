@@ -2,27 +2,49 @@
 
 A powerful AI-driven workflow automation platform that integrates multiple third-party APIs with intelligent caching and chained workflows. Built with Node.js, React, and PostgreSQL.
 
-## 📋 Table of Contents
 
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Prerequisites](#-prerequisites)
-- [Installation & Setup](#-installation--setup)
-- [Environment Variables](#-environment-variables)
-- [Running the Application](#-running-the-application)
-- [API Documentation](#-api-documentation)
-- [Architecture](#-architecture)
-- [Bonus Features](#-bonus-features)
-- [Testing](#-testing)
-- [Deployment](#-deployment)
-- [Contributing](#-contributing)
 
-## ✨ Features
+## 📋 Table of Contents## 📋 Table of Contents
 
-### Core Features
-- **🤖 AI-Powered Workflows**: Intelligent response generation using Google Gemini AI
-- **🌐 Multi-API Integration**: Weather, News, and GitHub API integrations
-- **🔗 Chained Workflows**: Execute multiple actions in sequence with context awareness
+
+
+- [Features](#-features)- [Features](#-features)
+
+- [Tech Stack](#-tech-stack)- [Tech Stack](#-tech-stack)
+
+- [Prerequisites](#-prerequisites)- [Prerequisites](#-prerequisites)
+
+- [Installation & Setup](#-installation--setup)- [Installation & Setup](#-installation--setup)
+
+- [Environment Variables](#-environment-variables)- [Environment Variables](#-environment-variables)
+
+- [Running the Application](#-running-the-application)- [Running the Application](#-running-the-application)
+
+- [API Documentation](#-api-documentation)- [API Documentation](#-api-documentation)
+
+- [Architecture](#-architecture)- [Architecture](#-architecture)
+
+- [Bonus Features](#-bonus-features)- [Bonus Features](#-bonus-features)
+
+- [Testing](#-testing)- [Testing](#-testing)
+
+- [Deployment](#-deployment)- [Deployment](#-deployment)
+
+- [Contributing](#-contributing)- [Contributing](#-contributing)
+
+
+
+## ✨ Features## ✨ Features
+
+
+
+### Core Features### Core Features
+
+- **🤖 AI-Powered Workflows**: Intelligent response generation using Google Gemini AI- **🤖 AI-Powered Workflows**: Intelligent response generation using Google Gemini AI
+
+- **🌐 Multi-API Integration**: Weather, News, and GitHub API integrations- **🌐 Multi-API Integration**: Weather, News, and GitHub API integrations
+
+- **🔗 Chained Workflows**: Execute multiple actions in sequence with context awareness- **🔗 Chained Workflows**: Execute multiple actions in sequence with context awareness
 
 - **📦 Advanced Caching**: Redis-based caching with memory fallback to reduce API calls- **📦 Advanced Caching**: Redis-based caching with memory fallback to reduce API calls
 
@@ -34,488 +56,907 @@ A powerful AI-driven workflow automation platform that integrates multiple third
 
 
 
-### Advanced Features### Advanced Features
+### Advanced Features
 
-- **⚡ Smart Rate Limiting Protection**: Automatic caching prevents 429 errors- **⚡ Smart Rate Limiting Protection**: Automatic caching prevents 429 errors
+- **⚡ Smart Rate Limiting Protection**: Automatic caching prevents 429 errors
 
-- **🎯 Context-Aware Chaining**: Each workflow step builds on previous results- **🎯 Context-Aware Chaining**: Each workflow step builds on previous results
+- **🎯 Context-Aware Chaining**: Each workflow step builds on previous results### Advanced Features
 
-- **📈 Cache Analytics**: Monitor cache performance and API usage statistics- **📈 Cache Analytics**: Monitor cache performance and API usage statistics
+- **📈 Cache Analytics**: Monitor cache performance and API usage statistics- **⚡ Smart Rate Limiting Protection**: Automatic caching prevents 429 errors
 
-- **🔄 Error Recovery**: Graceful handling of API failures with fallback responses- **🔄 Error Recovery**: Graceful handling of API failures with fallback responses
+- **🔄 Error Recovery**: Graceful handling of API failures with fallback responses- **🎯 Context-Aware Chaining**: Each workflow step builds on previous results
 
-- **📱 Responsive UI**: Clean, modern interface with real-time status updates- **📱 Responsive UI**: Clean, modern interface with real-time status updates
+- **📱 Responsive UI**: Clean, modern interface with real-time status updates- **📈 Cache Analytics**: Monitor cache performance and API usage statistics
 
+- **🔄 Error Recovery**: Graceful handling of API failures with fallback responses
 
-
-## 🛠 Tech Stack## 🛠 Tech Stack
-
-
-
-### Backend### Backend
-
-- **Node.js** with Express.js- **Node.js** with Express.js
-
-- **PostgreSQL** with Sequelize ORM- **PostgreSQL** with Sequelize ORM
-
-- **Redis** for caching (with memory fallback)- **Redis** for caching (with memory fallback)
-
-- **Passport.js** for GitHub OAuth- **Passport.js** for GitHub OAuth
-
-- **Google Gemini AI** for intelligent responses- **Google Gemini AI** for intelligent responses
+## 🛠 Tech Stack- **📱 Responsive UI**: Clean, modern interface with real-time status updates
 
 
 
-### Frontend### Frontend
+### Backend## 🛠 Tech Stack
 
-- **React.js** with modern hooks- **React.js** with modern hooks
+- **Node.js** with Express.js
 
-- **Axios** for API communication- **Axios** for API communication
+- **PostgreSQL** with Sequelize ORM### Backend
 
-- **CSS3** with responsive design- **CSS3** with responsive design
+- **Redis** for caching (with memory fallback)- **Node.js** with Express.js
+
+- **Passport.js** for GitHub OAuth- **PostgreSQL** with Sequelize ORM
+
+- **Google Gemini AI** for intelligent responses- **Redis** for caching (with memory fallback)
+
+- **Passport.js** for GitHub OAuth
+
+### Frontend- **Google Gemini AI** for intelligent responses
+
+- **React.js** with modern hooks
+
+- **Axios** for API communication### Frontend
+
+- **CSS3** with responsive design- **React.js** with modern hooks
+
+- **Axios** for API communication
+
+### APIs Integrated- **CSS3** with responsive design
+
+- **Google Gemini AI** - Text generation and analysis
+
+- **OpenWeatherMap** - Weather data### APIs Integrated
+
+- **NewsAPI** - Latest news articles- **Google Gemini AI** - Text generation and analysis
+
+- **GitHub API** - Repository information- **OpenWeatherMap** - Weather data
+
+- **NewsAPI** - Latest news articles
+
+## 📋 Prerequisites- **GitHub API** - Repository information
 
 
 
-### APIs Integrated### APIs Integrated
-
-- **Google Gemini AI** - Text generation and analysis- **Google Gemini AI** - Text generation and analysis
-
-- **OpenWeatherMap** - Weather data- **OpenWeatherMap** - Weather data
-
-- **NewsAPI** - Latest news articles- **NewsAPI** - Latest news articles
-
-- **GitHub API** - Repository information- **GitHub API** - Repository information
+Before running this application, make sure you have:## 📋 Prerequisites
 
 
 
-## 📋 Prerequisites## 📋 Prerequisites
+- **Node.js** (v14 or higher)Before running this application, make sure you have:
 
+- **npm** or **yarn**
 
+- **PostgreSQL** (v12 or higher)- **Node.js** (v14 or higher)
 
-Before running this application, make sure you have:Before running this application, make sure you have:
+- **Redis** (v6 or higher) - *Optional, falls back to memory caching*- **npm** or **yarn**
 
+- **PostgreSQL** (v12 or higher)
 
-
-- **Node.js** (v14 or higher)- **Node.js** (v14 or higher)
-
-- **npm** or **yarn**- **npm** or **yarn**
-
-- **PostgreSQL** (v12 or higher)- **PostgreSQL** (v12 or higher)
+## 🚀 Installation & Setup
 
 - **Redis** (v6 or higher) - *Optional, falls back to memory caching*- **Redis** (v6 or higher) - *Optional, falls back to memory caching*
 
+### 1. Clone the Repository
+
+```bash
+
+git clone https://github.com/aikansh008/SHAKTI.git
+
+cd SHAKTI## 🚀 Installation & Setup## 🚀 Installation & Setup
+
+```
 
 
-## 🚀 Installation & Setup## 🚀 Installation & Setup
 
-
+### 2. Install Dependencies
 
 ### 1. Clone the Repository### 1. Clone the Repository
 
-```bash```bash
+**Backend:**
 
-git clone https://github.com/yourusername/Upthrust_Assignment.gitgit clone https://github.com/yourusername/Upthrust_Assignment.git
+```bash```bash```bash
+
+cd server
+
+npm installgit clone https://github.com/yourusername/Upthrust_Assignment.gitgit clone https://github.com/yourusername/Upthrust_Assignment.git
+
+```
 
 cd Upthrust_Assignmentcd Upthrust_Assignment
 
-``````
+**Frontend:**
 
+```bash``````
 
+cd ../client
+
+npm install
+
+```
 
 ### 2. Install Dependencies### 2. Install Dependencies
 
-
-
-**Backend:****Backend:**
-
-```bash```bash
-
-cd servercd server
-
-npm installnpm install
-
-``````
+### 3. Database Setup
 
 
 
-**Frontend:****Frontend:**
+**Create PostgreSQL Database:**
 
-```bash```bash
+```sql**Backend:****Backend:**
 
-cd ../clientcd ../client
+CREATE DATABASE upthrust_db;
 
-npm installnpm install
-
-``````
+``````bash```bash
 
 
 
-### 3. Database Setup### 3. Database Setup
+**Database tables will be created automatically when the server starts.**cd servercd server
 
 
 
-**Create PostgreSQL Database:****Create PostgreSQL Database:**
+### 4. Redis Setup (Optional)npm installnpm install
 
-```sql```sql
+```bash
 
-CREATE DATABASE upthrust_db;CREATE DATABASE upthrust_db;
+# Install Redis (Ubuntu/Debian)``````
 
-``````
+sudo apt update
 
-
-
-**Database tables will be created automatically when the server starts.****Database tables will be created automatically when the server starts.**
+sudo apt install redis-server
 
 
 
-### 4. Redis Setup (Optional)### 4. Redis Setup (Optional)
+# Start Redis service**Frontend:****Frontend:**
+
+sudo systemctl start redis-server
 
 ```bash```bash
 
-# Install Redis (Ubuntu/Debian)# Install Redis (Ubuntu/Debian)
+# For Windows, download from: https://redis.io/download
 
-sudo apt updatesudo apt update
-
-sudo apt install redis-serversudo apt install redis-server
+```cd ../clientcd ../client
 
 
 
-# Start Redis service# Start Redis service
-
-sudo systemctl start redis-serversudo systemctl start redis-server
+## 🔧 Environment Variablesnpm installnpm install
 
 
 
-# For Windows, download from: https://redis.io/download# For Windows, download from: https://redis.io/download
-
-``````
+> **🚨 SECURITY WARNING**: Never commit `.env` files to version control! They contain sensitive API keys and secrets. Use the provided `.env.example` files as templates and create your own `.env` files locally.``````
 
 
-
-## 🔧 Environment Variables
-
-> **� SECURITY WARNING**: Never commit `.env` files to version control! They contain sensitive API keys and secrets. Use the provided `.env.example` files as templates and create your own `.env` files locally.
 
 ### Backend Environment Variables
 
-Create a `.env` file in the `server` directory:
+
+
+Create a `.env` file in the `server` directory:### 3. Database Setup### 3. Database Setup
 
 
 
-```env```env
+```env
 
-# Database Configuration# Database Configuration
+# Database Configuration
 
-DB_HOST=localhostDB_HOST=localhost
-
-DB_PORT=5432DB_PORT=5432
-
-DB_NAME=upthrust_dbDB_NAME=upthrust_db
-
-DB_USER=your_postgres_usernameDB_USER=your_postgres_username
-
-DB_PASSWORD=your_postgres_passwordDB_PASSWORD=your_postgres_password
+DATABASE_URL=postgres://postgres:yourpassword@localhost:5433/upthrust_db**Create PostgreSQL Database:****Create PostgreSQL Database:**
 
 
+
+# API Keys```sql```sql
+
+OPENAI_API_KEY=your_google_gemini_api_key
+
+WEATHER_API_KEY=your_openweathermap_api_keyCREATE DATABASE upthrust_db;CREATE DATABASE upthrust_db;
+
+NEWS_API_KEY=your_newsapi_key
+
+``````
+
+# GitHub OAuth (for authentication)
+
+GITHUB_CLIENT_ID=your_github_oauth_client_id
+
+GITHUB_CLIENT_SECRET=your_github_oauth_client_secret
+
+**Database tables will be created automatically when the server starts.****Database tables will be created automatically when the server starts.**
+
+# Application Configuration
+
+NODE_ENV=development
+
+PORT=5000
+
+SESSION_SECRET=your_super_secure_session_secret### 4. Redis Setup (Optional)### 4. Redis Setup (Optional)
+
+JWT_SECRET=your_jwt_secret
+
+``````bash```bash
+
+
+
+### Frontend Environment Variables# Install Redis (Ubuntu/Debian)# Install Redis (Ubuntu/Debian)
+
+
+
+Create a `.env` file in the `client` directory:sudo apt updatesudo apt update
+
+
+
+```envsudo apt install redis-serversudo apt install redis-server
+
+REACT_APP_API_URL=http://localhost:5000/api
+
+```
+
+
+
+### 🔑 API Keys Setup Instructions# Start Redis service# Start Redis service
+
+
+
+#### 1. Google Gemini AI API Keysudo systemctl start redis-serversudo systemctl start redis-server
+
+1. Go to [Google AI Studio](https://aistudio.google.com/)
+
+2. Create a new project or select existing
+
+3. Generate an API key
+
+4. Copy the key to `OPENAI_API_KEY` in your `.env` file# For Windows, download from: https://redis.io/download# For Windows, download from: https://redis.io/download
+
+
+
+#### 2. OpenWeatherMap API Key``````
+
+1. Visit [OpenWeatherMap](https://openweathermap.org/api)
+
+2. Sign up for a free account
+
+3. Navigate to API keys section
+
+4. Copy your API key to `WEATHER_API_KEY`## 🔧 Environment Variables
+
+
+
+#### 3. NewsAPI Key> **� SECURITY WARNING**: Never commit `.env` files to version control! They contain sensitive API keys and secrets. Use the provided `.env.example` files as templates and create your own `.env` files locally.
+
+1. Go to [NewsAPI](https://newsapi.org/)
+
+2. Register for a free account### Backend Environment Variables
+
+3. Get your API key from the dashboard
+
+4. Add to `NEWS_API_KEY` in `.env`Create a `.env` file in the `server` directory:
+
+
+
+#### 4. GitHub OAuth Setup
+
+1. Go to GitHub → Settings → Developer settings → OAuth Apps
+
+2. Create a new OAuth App with:```env```env
+
+   - **Application name**: Upthrust Workflow Automation
+
+   - **Homepage URL**: `http://localhost:3000`# Database Configuration# Database Configuration
+
+   - **Authorization callback URL**: `http://localhost:5000/auth/github/callback`
+
+3. Copy Client ID and Client Secret to your `.env` fileDB_HOST=localhostDB_HOST=localhost
+
+
+
+## 🏃‍♂️ Running the ApplicationDB_PORT=5432DB_PORT=5432
+
+
+
+### Development ModeDB_NAME=upthrust_dbDB_NAME=upthrust_db
+
+
+
+**1. Start the Backend Server:**DB_USER=your_postgres_usernameDB_USER=your_postgres_username
+
+```bash
+
+cd serverDB_PASSWORD=your_postgres_passwordDB_PASSWORD=your_postgres_password
+
+npm start
+
+```
+
+The backend will run on `http://localhost:5000`
 
 # Redis Configuration (Optional)# Redis Configuration (Optional)
 
-REDIS_URL=redis://localhost:6379REDIS_URL=redis://localhost:6379
+**2. Start the Frontend Development Server:**
+
+```bashREDIS_URL=redis://localhost:6379REDIS_URL=redis://localhost:6379
+
+cd client
+
+npm start
+
+```
+
+The frontend will run on `http://localhost:3000` or `http://localhost:3001`# API Keys# API Keys
 
 
 
-# API Keys# API Keys
-
-GEMINI_API_KEY=your_google_gemini_api_keyGEMINI_API_KEY=your_google_gemini_api_key
-
-WEATHER_API_KEY=your_openweathermap_api_keyWEATHER_API_KEY=your_openweathermap_api_key
-
-NEWS_API_KEY=your_newsapi_keyNEWS_API_KEY=your_newsapi_key
+### Production ModeGEMINI_API_KEY=your_google_gemini_api_keyGEMINI_API_KEY=your_google_gemini_api_key
 
 
+
+**Backend:**WEATHER_API_KEY=your_openweathermap_api_keyWEATHER_API_KEY=your_openweathermap_api_key
+
+```bash
+
+cd serverNEWS_API_KEY=your_newsapi_keyNEWS_API_KEY=your_newsapi_key
+
+npm run build
+
+npm run start:prod
+
+```
 
 # GitHub OAuth (for authentication)# GitHub OAuth (for authentication)
 
-GITHUB_CLIENT_ID=your_github_oauth_client_idGITHUB_CLIENT_ID=your_github_oauth_client_id
+**Frontend:**
 
-GITHUB_CLIENT_SECRET=your_github_oauth_client_secretGITHUB_CLIENT_SECRET=your_github_oauth_client_secret
+```bashGITHUB_CLIENT_ID=your_github_oauth_client_idGITHUB_CLIENT_ID=your_github_oauth_client_id
 
+cd client
 
+npm run buildGITHUB_CLIENT_SECRET=your_github_oauth_client_secretGITHUB_CLIENT_SECRET=your_github_oauth_client_secret
+
+npm install -g serve
+
+serve -s build -l 3000
+
+```
 
 # Application Configuration# Application Configuration
 
+## 📚 API Documentation
+
 NODE_ENV=developmentNODE_ENV=development
 
-PORT=5000PORT=5000
+### Authentication Endpoints
 
-SESSION_SECRET=your_super_secure_session_secretSESSION_SECRET=your_super_secure_session_secret
+```PORT=5000PORT=5000
 
-CLIENT_URL=http://localhost:3000CLIENT_URL=http://localhost:3000
+GET  /auth/github          - Initiate GitHub OAuth
+
+GET  /auth/github/callback - GitHub OAuth callbackSESSION_SECRET=your_super_secure_session_secretSESSION_SECRET=your_super_secure_session_secret
+
+POST /auth/logout          - User logout
+
+GET  /auth/user            - Get current user infoCLIENT_URL=http://localhost:3000CLIENT_URL=http://localhost:3000
+
+```
 
 ``````
 
+### Workflow Endpoints
+
+```
+
+POST /api/run-workflow     - Execute single workflow
+
+GET  /api/history          - Get workflow history### Frontend Environment Variables### Frontend Environment Variables
+
+```
 
 
-### Frontend Environment Variables### Frontend Environment Variables
 
+### Chain Workflow Endpoints
 
+```Create a `.env` file in the `client` directory:Create a `.env` file in the `client` directory:
 
-Create a `.env` file in the `client` directory:Create a `.env` file in the `client` directory:
+GET  /api/chains           - Get user's workflow chains
 
+POST /api/chains           - Create new workflow chain
 
+POST /api/chains/public/execute - Execute ad-hoc workflow chain
 
-```env```env
+POST /api/chains/:id/execute - Execute saved workflow chain```env```env
+
+```
 
 REACT_APP_API_URL=http://localhost:5000/apiREACT_APP_API_URL=http://localhost:5000/api
 
-``````
+### Caching & Monitoring
+
+`````````
+
+GET  /api/cache/stats      - Get cache statistics
+
+DELETE /api/cache/clear    - Clear cache (development only)
+
+GET  /api/ai/health        - AI service health check
+
+```### 🔑 API Keys Setup Instructions### 🔑 API Keys Setup Instructions
 
 
 
-### 🔑 API Keys Setup Instructions### 🔑 API Keys Setup Instructions
+### Request/Response Examples
 
 
 
-#### 1. Google Gemini AI API Key#### 1. Google Gemini AI API Key
+**Single Workflow:**#### 1. Google Gemini AI API Key#### 1. Google Gemini AI API Key
 
-1. Go to [Google AI Studio](https://aistudio.google.com/)1. Go to [Google AI Studio](https://aistudio.google.com/)
+```json
 
-2. Create a new project or select existing2. Create a new project or select existing
+POST /api/run-workflow1. Go to [Google AI Studio](https://aistudio.google.com/)1. Go to [Google AI Studio](https://aistudio.google.com/)
 
-3. Generate an API key3. Generate an API key
+{
 
-4. Copy the key to `GEMINI_API_KEY` in your `.env` file4. Copy the key to `GEMINI_API_KEY` in your `.env` file
+  "prompt": "What's the weather like today?",2. Create a new project or select existing2. Create a new project or select existing
 
+  "action": "weather"
 
-
-#### 2. OpenWeatherMap API Key#### 2. OpenWeatherMap API Key
-
-1. Visit [OpenWeatherMap](https://openweathermap.org/api)1. Visit [OpenWeatherMap](https://openweathermap.org/api)
-
-2. Sign up for a free account2. Sign up for a free account
-
-3. Navigate to API keys section3. Navigate to API keys section
-
-4. Copy your API key to `WEATHER_API_KEY`4. Copy your API key to `WEATHER_API_KEY`
+}3. Generate an API key3. Generate an API key
 
 
 
-#### 3. NewsAPI Key#### 3. NewsAPI Key
+Response:4. Copy the key to `GEMINI_API_KEY` in your `.env` file4. Copy the key to `GEMINI_API_KEY` in your `.env` file
 
-1. Go to [NewsAPI](https://newsapi.org/)1. Go to [NewsAPI](https://newsapi.org/)
+{
 
-2. Register for a free account2. Register for a free account
+  "ai_response": "Perfect weather conditions ahead!...",
 
-3. Get your API key from the dashboard3. Get your API key from the dashboard
+  "api_response": "Clear sky, 22°C in New York",
 
-4. Add to `NEWS_API_KEY` in `.env`4. Add to `NEWS_API_KEY` in `.env`
+  "final_result": "Perfect weather conditions ahead! Clear sky, 22°C in New York #weather"#### 2. OpenWeatherMap API Key#### 2. OpenWeatherMap API Key
+
+}
+
+```1. Visit [OpenWeatherMap](https://openweathermap.org/api)1. Visit [OpenWeatherMap](https://openweathermap.org/api)
 
 
 
-#### 4. GitHub OAuth Setup#### 4. GitHub OAuth Setup
+**Workflow Chain:**2. Sign up for a free account2. Sign up for a free account
 
-1. Go to GitHub → Settings → Developer settings → OAuth Apps1. Go to GitHub → Settings → Developer settings → OAuth Apps
+```json
 
-2. Create a new OAuth App with:2. Create a new OAuth App with:
+POST /api/chains/public/execute3. Navigate to API keys section3. Navigate to API keys section
 
-   - **Application name**: Upthrust Workflow Automation   - **Application name**: Upthrust Workflow Automation
+{
 
-   - **Homepage URL**: `http://localhost:3000`   - **Homepage URL**: `http://localhost:3000`
+  "actions": [4. Copy your API key to `WEATHER_API_KEY`4. Copy your API key to `WEATHER_API_KEY`
+
+    {"type": "weather", "prompt": "Weather in London"},
+
+    {"type": "news", "prompt": "Climate news"}
+
+  ]
+
+}#### 3. NewsAPI Key#### 3. NewsAPI Key
+
+
+
+Response:1. Go to [NewsAPI](https://newsapi.org/)1. Go to [NewsAPI](https://newsapi.org/)
+
+{
+
+  "chainName": "Ad-hoc Chain",2. Register for a free account2. Register for a free account
+
+  "totalSteps": 2,
+
+  "completedSteps": 2,3. Get your API key from the dashboard3. Get your API key from the dashboard
+
+  "failedSteps": 0,
+
+  "results": [4. Add to `NEWS_API_KEY` in `.env`4. Add to `NEWS_API_KEY` in `.env`
+
+    {
+
+      "step": 1,
+
+      "action": "weather",
+
+      "ai_response": "...",#### 4. GitHub OAuth Setup#### 4. GitHub OAuth Setup
+
+      "api_response": "...",
+
+      "final_result": "...",1. Go to GitHub → Settings → Developer settings → OAuth Apps1. Go to GitHub → Settings → Developer settings → OAuth Apps
+
+      "cached": true,
+
+      "execution_time_ms": 2452. Create a new OAuth App with:2. Create a new OAuth App with:
+
+    }
+
+  ],   - **Application name**: Upthrust Workflow Automation   - **Application name**: Upthrust Workflow Automation
+
+  "summary": "🔗 Workflow Chain execution summary..."
+
+}   - **Homepage URL**: `http://localhost:3000`   - **Homepage URL**: `http://localhost:3000`
+
+```
 
    - **Authorization callback URL**: `http://localhost:5000/auth/github/callback`   - **Authorization callback URL**: `http://localhost:5000/auth/github/callback`
 
+## 🏗 Architecture
+
 3. Copy Client ID and Client Secret to your `.env` file3. Copy Client ID and Client Secret to your `.env` file
 
+### Backend Architecture
+
+```
+
+server/
+
+├── src/## 🏃‍♂️ Running the Application## 🏃‍♂️ Running the Application
+
+│   ├── config/          # Database and OAuth configuration
+
+│   ├── middleware/      # Authentication and validation
+
+│   ├── models/          # Database models (User, WorkflowRun, WorkflowChain)
+
+│   ├── routes/          # API route handlers### Development Mode### Development Mode
+
+│   ├── services/        # Business logic services
+
+│   │   ├── aiService.js         # Google Gemini AI integration
+
+│   │   ├── apiService.js        # Third-party API calls
+
+│   │   ├── cacheService.js      # Redis/Memory caching**1. Start the Backend Server:****1. Start the Backend Server:**
+
+│   │   └── chainedWorkflowService.js # Workflow orchestration
+
+│   └── index.js         # Application entry point```bash```bash
+
+└── package.json
+
+```cd servercd server
 
 
-## 🏃‍♂️ Running the Application## 🏃‍♂️ Running the Application
+
+### Frontend Architecturenpm startnpm start
+
+```
+
+client/``````
+
+├── src/
+
+│   ├── auth/            # Authentication componentsThe backend will run on `http://localhost:5000`The backend will run on `http://localhost:5000`
+
+│   ├── components/      # React components
+
+│   │   ├── WorkflowForm.js      # Single workflow form
+
+│   │   ├── ChainWorkflowForm.js # Chained workflow form
+
+│   │   └── ResultDisplay.js     # Results display**2. Start the Frontend Development Server:****2. Start the Frontend Development Server:**
+
+│   ├── services/        # API communication
+
+│   └── App.js           # Main application component```bash```bash
+
+└── package.json
+
+```cd clientcd client
 
 
 
-### Development Mode### Development Mode
+### Caching Architecturenpm startnpm start
+
+- **Primary**: Redis for distributed caching
+
+- **Fallback**: In-memory Map for development/testing``````
+
+- **TTL**: 10 minutes for API responses, 30 minutes for workflow results
+
+- **Analytics**: Cache hit/miss tracking and performance monitoringThe frontend will run on `http://localhost:3000`The frontend will run on `http://localhost:3000`
 
 
 
-**1. Start the Backend Server:****1. Start the Backend Server:**
+## 🌟 Bonus Features
+
+
+
+### ✅ Implemented Bonus Features### Production Mode### Production Mode
+
+
+
+1. **🔐 GitHub Authentication**
+
+   - OAuth 2.0 integration with Passport.js
+
+   - User session management**Backend:****Backend:**
+
+   - Protected routes for authenticated users
 
 ```bash```bash
 
-cd servercd server
+2. **🔗 Multiple Chained Actions**
 
-npm startnpm start
+   - Context-aware workflow chainscd servercd server
 
-``````
+   - Dynamic action sequencing
 
-The backend will run on `http://localhost:5000`The backend will run on `http://localhost:5000`
-
-
-
-**2. Start the Frontend Development Server:****2. Start the Frontend Development Server:**
-
-```bash```bash
-
-cd clientcd client
-
-npm startnpm start
-
-``````
-
-The frontend will run on `http://localhost:3000`The frontend will run on `http://localhost:3000`
+   - Cross-action data flownpm run buildnpm run build
 
 
 
-### Production Mode### Production Mode
+3. **📦 Advanced Caching System**npm run start:prodnpm run start:prod
+
+   - Redis-based distributed caching
+
+   - Intelligent cache warming``````
+
+   - Performance analytics
 
 
 
-**Backend:****Backend:**
+4. **🎯 Enhanced Error Handling**
 
-```bash```bash
+   - Graceful API failure recovery**Frontend:****Frontend:**
 
-cd servercd server
+   - Rate limiting protection
 
-npm run buildnpm run build
-
-npm run start:prodnpm run start:prod
-
-``````
+   - Comprehensive logging```bash```bash
 
 
 
-**Frontend:****Frontend:**
+### 🚀 Ready for Deploymentcd clientcd client
 
-```bash```bash
 
-cd clientcd client
 
-npm run buildnpm run build
+The application is configured for deployment on:npm run buildnpm run build
 
-npm install -g servenpm install -g serve
 
-serve -s build -l 3000serve -s build -l 3000
+
+- **Backend**: Heroku, Railway, or any Node.js hostingnpm install -g servenpm install -g serve
+
+- **Frontend**: Vercel, Netlify, or static hosting
+
+- **Database**: PostgreSQL on Heroku, Supabase, or AWS RDSserve -s build -l 3000serve -s build -l 3000
+
+- **Cache**: Redis Cloud, Upstash, or AWS ElastiCache
 
 ``````
 
+## 🧪 Testing
 
 
-## 📚 API Documentation## 📚 API Documentation
 
+### Backend Testing
 
+```bash## 📚 API Documentation## 📚 API Documentation
+
+cd server
+
+npm test
+
+```
 
 ### Authentication Endpoints### Authentication Endpoints
 
-``````
+### Frontend Testing
 
-GET  /auth/github          - Initiate GitHub OAuthGET  /auth/github          - Initiate GitHub OAuth
+```bash``````
+
+cd client
+
+npm testGET  /auth/github          - Initiate GitHub OAuthGET  /auth/github          - Initiate GitHub OAuth
+
+```
 
 GET  /auth/github/callback - GitHub OAuth callbackGET  /auth/github/callback - GitHub OAuth callback
 
-POST /auth/logout          - User logoutPOST /auth/logout          - User logout
+### API Testing with cURL
 
-GET  /auth/user            - Get current user infoGET  /auth/user            - Get current user info
+```bashPOST /auth/logout          - User logoutPOST /auth/logout          - User logout
+
+# Test workflow execution
+
+curl -X POST http://localhost:5000/api/run-workflow \GET  /auth/user            - Get current user infoGET  /auth/user            - Get current user info
+
+  -H "Content-Type: application/json" \
+
+  -d '{"prompt":"Weather in Paris","action":"weather"}'``````
+
+
+
+# Test chain execution
+
+curl -X POST http://localhost:5000/api/chains/public/execute \
+
+  -H "Content-Type: application/json" \### Workflow Endpoints### Workflow Endpoints
+
+  -d '{"actions":[{"type":"weather","prompt":"Weather in Tokyo"}]}'
 
 ``````
 
+# Check cache statistics
 
+curl http://localhost:5000/api/cache/statsPOST /api/run-workflow     - Execute single workflowPOST /api/run-workflow     - Execute single workflow
 
-### Workflow Endpoints### Workflow Endpoints
-
-``````
-
-POST /api/run-workflow     - Execute single workflowPOST /api/run-workflow     - Execute single workflow
+```
 
 GET  /api/history          - Get workflow historyGET  /api/history          - Get workflow history
 
-``````
-
-
-
-### Chain Workflow Endpoints### Chain Workflow Endpoints
+## 📖 Usage Examples
 
 ``````
 
-GET  /api/chains           - Get user's workflow chainsGET  /api/chains           - Get user's workflow chains
+### Single Workflow
 
-POST /api/chains           - Create new workflow chainPOST /api/chains           - Create new workflow chain
+1. Navigate to the application
 
-POST /api/chains/run       - Execute ad-hoc workflow chainPOST /api/chains/run       - Execute ad-hoc workflow chain
+2. Select "Single Workflow" mode
+
+3. Choose an action (Weather, News, or GitHub)### Chain Workflow Endpoints### Chain Workflow Endpoints
+
+4. Enter your prompt
+
+5. Click "Run Workflow"``````
+
+
+
+### Chained WorkflowGET  /api/chains           - Get user's workflow chainsGET  /api/chains           - Get user's workflow chains
+
+1. Switch to "Workflow Chain" mode
+
+2. Add multiple steps using "+ Add Step"POST /api/chains           - Create new workflow chainPOST /api/chains           - Create new workflow chain
+
+3. Configure each step with action type and parameters
+
+4. Click "Run Workflow Chain"POST /api/chains/run       - Execute ad-hoc workflow chainPOST /api/chains/run       - Execute ad-hoc workflow chain
+
+5. View detailed results with cache status and timing
 
 POST /api/chains/:id/execute - Execute saved workflow chainPOST /api/chains/:id/execute - Execute saved workflow chain
 
-``````
+### Monitoring Performance
+
+- Visit `/api/cache/stats` to view cache performance``````
+
+- Check execution times in workflow results
+
+- Monitor cache hit rates for optimization
 
 
 
-### Caching & Monitoring### Caching & Monitoring
-
-``````
-
-GET  /api/cache/stats      - Get cache statisticsGET  /api/cache/stats      - Get cache statistics
-
-DELETE /api/cache/clear    - Clear cache (development only)DELETE /api/cache/clear    - Clear cache (development only)
-
-GET  /api/ai/health        - AI service health checkGET  /api/ai/health        - AI service health check
-
-``````
+## 🚢 Deployment### Caching & Monitoring### Caching & Monitoring
 
 
+
+### Heroku Deployment``````
+
+
+
+**Backend:**GET  /api/cache/stats      - Get cache statisticsGET  /api/cache/stats      - Get cache statistics
+
+```bash
+
+# In server directoryDELETE /api/cache/clear    - Clear cache (development only)DELETE /api/cache/clear    - Clear cache (development only)
+
+heroku create your-app-name-api
+
+heroku addons:create heroku-postgresql:hobby-devGET  /api/ai/health        - AI service health checkGET  /api/ai/health        - AI service health check
+
+heroku addons:create heroku-redis:hobby-dev
+
+heroku config:set NODE_ENV=production``````
+
+# Set all environment variables
+
+git subtree push --prefix=server heroku main
+
+```
 
 ### Request/Response Examples### Request/Response Examples
 
+**Frontend:**
+
+```bash
+
+# In client directory  
+
+# Deploy to Vercel**Single Workflow:****Single Workflow:**
+
+vercel --prod
+
+``````json```json
 
 
-**Single Workflow:****Single Workflow:**
 
-```json```json
+### Environment Variables for ProductionPOST /api/run-workflowPOST /api/run-workflow
 
-POST /api/run-workflowPOST /api/run-workflow
+Update your production environment variables:
 
-{{
+- Database URLs from your hosting provider{{
 
-  "prompt": "What's the weather like today?",  "prompt": "What's the weather like today?",
+- Redis URL from your Redis provider
+
+- Update CLIENT_URL to your frontend domain  "prompt": "What's the weather like today?",  "prompt": "What's the weather like today?",
+
+- Set NODE_ENV=production
 
   "action": "weather"  "action": "weather"
 
+## 🤝 Contributing
+
 }}
 
+1. Fork the repository
 
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
 
-Response:Response:
+3. Commit your changes: `git commit -m 'Add amazing feature'`
+
+4. Push to the branch: `git push origin feature/amazing-feature`Response:Response:
+
+5. Open a Pull Request
 
 {{
+
+## 📄 License
 
   "ai_response": "Perfect weather conditions ahead!...",  "ai_response": "Perfect weather conditions ahead!...",
 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
   "api_response": "Clear sky, 22°C in New York",  "api_response": "Clear sky, 22°C in New York",
+
+## 👨‍💻 Author
 
   "final_result": "Perfect weather conditions ahead! Clear sky, 22°C in New York #weather"  "final_result": "Perfect weather conditions ahead! Clear sky, 22°C in New York #weather"
 
-}}
+**Aikansh**
+
+- GitHub: [@aikansh008](https://github.com/aikansh008)}}
+
+- Repository: [SHAKTI](https://github.com/aikansh008/SHAKTI)
 
 ``````
 
+## 🙏 Acknowledgments
 
 
-**Workflow Chain:****Workflow Chain:**
 
-```json```json
+- Google Gemini AI for intelligent text generation
+
+- OpenWeatherMap for weather data**Workflow Chain:****Workflow Chain:**
+
+- NewsAPI for news integration
+
+- GitHub for OAuth and repository data```json```json
+
+- The amazing open-source community
 
 POST /api/chains/runPOST /api/chains/run
 
+---
+
 {{
+
+### 🎯 Project Status: ✅ Complete
 
   "prompt": "Get weather and related news",  "prompt": "Get weather and related news",
 
-  "actions": [  "actions": [
+This project successfully implements all required features plus bonus enhancements:
 
-    {"type": "weather", "prompt": "Weather in London"},    {"type": "weather", "prompt": "Weather in London"},
+- ✅ Backend API implementation with caching  "actions": [  "actions": [
 
-    {"type": "news", "prompt": "Climate news"}    {"type": "news", "prompt": "Climate news"}
+- ✅ Frontend form and result display
 
-  ]  ]
+- ✅ Database persistence with history    {"type": "weather", "prompt": "Weather in London"},    {"type": "weather", "prompt": "Weather in London"},
+
+- ✅ GitHub authentication
+
+- ✅ Multiple chained actions with context awareness    {"type": "news", "prompt": "Climate news"}    {"type": "news", "prompt": "Climate news"}
+
+- ✅ Advanced caching and performance monitoring
+
+- ✅ Comprehensive documentation  ]  ]
+
+- ✅ Ready for deployment
 
 }}
 
+**Ready for production deployment and further enhancement!**
 
 
 Response:Response:
@@ -806,57 +1247,263 @@ curl http://localhost:5000/api/cache/statscurl http://localhost:5000/api/cache/s
 
 
 
-## 🚢 Deployment## 🚢 Deployment
+## 🚢 Deployment
 
+### � Render Deployment (Recommended)
 
+Render provides excellent support for full-stack applications with PostgreSQL and Redis. Here's a complete deployment guide:
 
-### Heroku Deployment### Heroku Deployment
+#### 1. Prepare Your Repository
 
+First, ensure your code is pushed to GitHub:
 
+```bash
+git add .
+git commit -m "Prepare for Render deployment"
+git push origin main
+```
 
-**Backend:****Backend:**
+#### 2. Deploy PostgreSQL Database
 
-```bash```bash
+1. Go to [Render Dashboard](https://render.com/dashboard)
+2. Click **"New"** → **"PostgreSQL"**
+3. Configure:
+   - **Name**: `upthrust-db`
+   - **Database**: `upthrust_db`
+   - **User**: `upthrust_user`
+   - **Region**: Choose closest to your users
+   - **Plan**: Free tier available
+4. Click **"Create Database"**
+5. **Save the connection details** (Internal Database URL and External Database URL)
 
-# In server directory# In server directory
+#### 3. Deploy Redis Instance
 
-heroku create your-app-name-apiheroku create your-app-name-api
+1. In Render Dashboard, click **"New"** → **"Redis"**
+2. Configure:
+   - **Name**: `upthrust-redis`
+   - **Region**: Same as your database
+   - **Plan**: Free tier available
+3. Click **"Create Redis"**
+4. **Save the Redis connection URL**
 
-heroku addons:create heroku-postgresql:hobby-devheroku addons:create heroku-postgresql:hobby-dev
+#### 4. Deploy Backend API
 
-heroku addons:create heroku-redis:hobby-devheroku addons:create heroku-redis:hobby-dev
+1. In Render Dashboard, click **"New"** → **"Web Service"**
+2. Connect your GitHub repository
+3. Configure:
+   - **Name**: `upthrust-api`
+   - **Environment**: `Node`
+   - **Root Directory**: `server`
+   - **Build Command**: `npm install`
+   - **Start Command**: `npm start`
+   - **Auto-Deploy**: `Yes`
 
-heroku config:set NODE_ENV=productionheroku config:set NODE_ENV=production
+4. **Environment Variables** (click "Advanced" → "Add Environment Variable"):
 
-# Set all environment variables# Set all environment variables
+```env
+NODE_ENV=production
+PORT=10000
+DATABASE_URL=[Your PostgreSQL Internal URL from step 2]
+REDIS_URL=[Your Redis URL from step 3]
 
-git subtree push --prefix=server heroku maingit subtree push --prefix=server heroku main
+# API Keys (add your actual keys)
+OPENAI_API_KEY=your_google_gemini_api_key
+WEATHER_API_KEY=your_openweathermap_api_key
+NEWS_API_KEY=your_newsapi_key
 
-``````
+# GitHub OAuth
+GITHUB_CLIENT_ID=your_github_oauth_client_id
+GITHUB_CLIENT_SECRET=your_github_oauth_client_secret
 
+# Security
+SESSION_SECRET=your_super_secure_session_secret_minimum_32_chars
+JWT_SECRET=your_jwt_secret_minimum_32_chars
 
+# Frontend URL (update after frontend deployment)
+CLIENT_URL=https://upthrust-app.onrender.com
+```
 
-**Frontend:****Frontend:**
+5. Click **"Create Web Service"**
 
-```bash```bash
+#### 5. Deploy Frontend
 
-# In client directory  # In client directory  
+1. In Render Dashboard, click **"New"** → **"Static Site"**
+2. Connect your GitHub repository
+3. Configure:
+   - **Name**: `upthrust-app`
+   - **Root Directory**: `client`
+   - **Build Command**: `npm install && npm run build`
+   - **Publish Directory**: `build`
+   - **Auto-Deploy**: `Yes`
 
-# Deploy to Vercel# Deploy to Vercel
+4. **Environment Variables**:
 
-vercel --prodvercel --prod
+```env
+REACT_APP_API_URL=https://upthrust-api.onrender.com/api
+```
 
-``````
+5. Click **"Create Static Site"**
 
+#### 6. Update Backend Environment
 
+1. Go to your backend service in Render
+2. Update the `CLIENT_URL` environment variable with your frontend URL:
+   ```
+   CLIENT_URL=https://upthrust-app.onrender.com
+   ```
+3. The service will automatically redeploy
 
-### Environment Variables for Production### Environment Variables for Production
+#### 7. Update GitHub OAuth Settings
 
-Update your production environment variables:Update your production environment variables:
+1. Go to GitHub → Settings → Developer settings → OAuth Apps
+2. Update your OAuth app:
+   - **Homepage URL**: `https://upthrust-app.onrender.com`
+   - **Authorization callback URL**: `https://upthrust-api.onrender.com/auth/github/callback`
 
-- Database URLs from your hosting provider- Database URLs from your hosting provider
+### 🔧 Render-Specific Configuration
 
-- Redis URL from your Redis provider- Redis URL from your Redis provider
+Create a `render.yaml` file in your project root for automated deployments:
+
+```yaml
+databases:
+  - name: upthrust-db
+    databaseName: upthrust_db
+    user: upthrust_user
+    plan: free
+
+services:
+  - type: redis
+    name: upthrust-redis
+    plan: free
+
+  - type: web
+    name: upthrust-api
+    env: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: upthrust-db
+          property: connectionString
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: upthrust-redis
+          property: connectionString
+
+  - type: web
+    name: upthrust-app
+    env: static
+    rootDir: client
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./build
+    plan: free
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://upthrust-api.onrender.com/api
+```
+
+### 🚀 Alternative Deployment Options
+
+#### Vercel (Frontend Only)
+```bash
+# Install Vercel CLI
+npm install -g vercel
+
+# Deploy from client directory
+cd client
+vercel --prod
+```
+
+#### Railway (Full Stack)
+```bash
+# Install Railway CLI
+npm install -g @railway/cli
+
+# Login and deploy
+railway login
+railway new
+railway up
+```
+
+#### Heroku (Full Stack)
+```bash
+# Install Heroku CLI
+npm install -g heroku
+
+# Create apps
+heroku create your-app-name-api
+heroku create your-app-name-frontend
+
+# Add add-ons
+heroku addons:create heroku-postgresql:hobby-dev -a your-app-name-api
+heroku addons:create heroku-redis:hobby-dev -a your-app-name-api
+
+# Deploy backend
+git subtree push --prefix=server heroku main
+
+# Deploy frontend
+git subtree push --prefix=client heroku main
+```
+
+### 📋 Production Environment Checklist
+
+Before deploying to production:
+
+- [ ] All API keys are properly set
+- [ ] Database connection is working
+- [ ] Redis connection is working
+- [ ] GitHub OAuth URLs are updated
+- [ ] CORS is configured for production domains
+- [ ] Environment variables are set correctly
+- [ ] Build commands work locally
+- [ ] All dependencies are in package.json
+- [ ] No .env files are committed to git
+
+### 🔍 Troubleshooting Deployment
+
+**Common Issues:**
+
+1. **Build Fails**
+   ```bash
+   # Test build locally
+   cd server && npm install && npm start
+   cd client && npm install && npm run build
+   ```
+
+2. **Database Connection Issues**
+   - Ensure DATABASE_URL is set correctly
+   - Check if PostgreSQL is running on Render
+   - Verify network connectivity
+
+3. **API Keys Not Working**
+   - Double-check environment variables
+   - Ensure no typos in variable names
+   - Test API endpoints manually
+
+4. **GitHub OAuth Issues**
+   - Update callback URLs in GitHub settings
+   - Verify CLIENT_ID and CLIENT_SECRET
+   - Check redirect URLs match exactly
+
+### 📊 Monitoring Production
+
+**Render Monitoring:**
+- View logs in Render dashboard
+- Monitor resource usage
+- Set up health checks
+- Configure auto-scaling
+
+**Application Monitoring:**
+- `/api/ai/health` - AI service status
+- `/api/cache/stats` - Cache performance
+- Database connection logs
+- API response times
 
 - Update CLIENT_URL to your frontend domain- Update CLIENT_URL to your frontend domain
 

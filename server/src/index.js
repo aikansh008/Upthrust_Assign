@@ -52,7 +52,7 @@ redisClient.connect().catch(console.error);
 // Security middleware
 app.use(helmet());
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: process.env.CLIENT_URL || 'https://upthrust-assign.onrender.com',
   credentials: true
 }));
 
@@ -135,7 +135,7 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
   console.log(`📝 Environment: ${process.env.NODE_ENV || 'development'}`);
-  console.log(`🔐 GitHub Auth: http://localhost:${PORT}/auth/github`);
+  console.log(`🔐 GitHub Auth: https://upthrust-assign.onrender.com/auth/github`);
 });
 
 module.exports = app;

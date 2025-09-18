@@ -32,7 +32,7 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const loginWithGitHub = () => {
-    window.location.href = 'http://localhost:5000/auth/github';
+    window.location.href = 'https://upthrust-assign.onrender.com/auth/github';
   };
 
   const logout = async () => {

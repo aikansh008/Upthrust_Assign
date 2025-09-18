@@ -18,7 +18,8 @@ router.get('/github/callback',
     );
     
     // Redirect to frontend with token
-    res.redirect(`http://localhost:3000/auth/callback?token=${token}`);
+    const clientUrl = process.env.CLIENT_URL || 'https://upthrust-assign.onrender.com';
+    res.redirect(`${clientUrl}/auth/callback?token=${token}`);
   }
 );
 

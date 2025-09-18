@@ -43,9 +43,9 @@
     "clean": "npm run clean:server && npm run clean:client",
     "clean:server": "cd server && rm -rf node_modules dist",
     "clean:client": "cd client && rm -rf node_modules build",
-    "cache:clear": "curl -X DELETE http://localhost:5000/api/cache/clear",
-    "cache:stats": "curl http://localhost:5000/api/cache/stats",
-    "health:check": "curl http://localhost:5000/api/ai/health"
+    "cache:clear": "curl -X DELETE https://upthrust-assign.onrender.com/api/cache/clear",
+    "cache:stats": "curl https://upthrust-assign.onrender.com/api/cache/stats",
+    "health:check": "curl https://upthrust-assign.onrender.com/api/ai/health"
   },
   "devDependencies": {
     "concurrently": "^8.2.0"
