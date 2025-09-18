@@ -52,7 +52,12 @@ redisClient.connect().catch(console.error);
 // Security middleware
 app.use(helmet());
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'https://upthrust-assign.onrender.com',
+  origin: [
+    'https://upthrust-assign.onrender.com',
+    'http://localhost:3000',
+    'http://localhost:3001',
+    process.env.CLIENT_URL
+  ].filter(Boolean),
   credentials: true
 }));
 
